@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Challenge 3 API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- start api maps -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <script src="scripts/main.js" defer></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <script src="scripts/locations.js" defer></script>
+        <script src="javascript.js" defer></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+        <!--	Geocoder	-->
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
+        type="text/css"
+        />
+         <!--	Richting	-->
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
+        type="text/css"/>
+	</head>
+	<body>
+		<div class="header">
+				<img src="images/spacexlogo.png" alt="logo" class="spacexlogo">
+		</div>
+		<div class="content">
+			<h2> Welkom terug!</h2>
+			<p>Welkom terug op aarde. Hopelijke heeft u een fijne reis gehad. Bekijk wat voor weer het bij u thuis is en hoe u er kunt komen!</p>
+		</div>
+		<!-- container om de api content te positioneren	-->
+		<div class="contentcontainer">
+			<!-- containers voor het weer -->
+			<div class="container">
+				<div class="weer">
+					<div class="icoon"><img id="weerIcoon" src="icons/unknown.png"></div>
+					<div class="temperatuur">Temperatuur</div>
+					<div class="beschrijving">Beschrijving</div>
+					<div class="locatie">Locatie</div>   
+				</div>
+				 <div class="input">
+					<input type="text" class="inputTekst">
+					<input type="submit" class="knop" value="Zoek">
+				</div>
+			</div>
+			<!-- html van de maps api -->
+			<div class="map">
+				<div id="map"></div>
+				<div id="distance" class="distance-container"></div> 
+				<script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script>
+			</div>
+        </div>  
+	</body>
+</html>
