@@ -61,12 +61,16 @@ body {
 }
 .spacexlogo{
 	width: 70%;
+	height: 35px;
 	margin-left:7%;
 }
 
 @media only screen and (min-width: 570px){
 	body{
 		font-size: 25px;
+	}
+	.spacexlogo{
+		height: 5%;
 	}
 }
 @media only screen and (min-width: 900px){
@@ -113,16 +117,18 @@ body {
 		font-size: 30px;
 	}
 	.container{
-		width: 500px;
+		width: 600px;
 		height: 500px;
 		padding:0;
 	}
 	#map{
-		width: 900px;
+		width: 950px;
 		height: 500px;
 	}
 	.content{
-		padding-top:0
+		padding-top; 0;
+		width: 60%;
+		margin-left:17%;
 	}
 	.spacexlogo{
 		width: 30%;
