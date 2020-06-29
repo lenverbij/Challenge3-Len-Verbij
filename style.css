@@ -133,4 +133,7 @@ body {
 	.spacexlogo{
 		width: 30%;
 	}
+	h2{
+		margin-top: 0;
+	}
 }
