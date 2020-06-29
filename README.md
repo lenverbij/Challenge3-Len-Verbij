@@ -5,7 +5,7 @@
  **Link naar website:** https://lenverbij.github.io/Challenge3-Len-Verbij/
  
 # API keuzes
-Ik heb gekozen voor de weer api en de afstand api.
+Ik heb gekozen voor de weer api en de locatie api.
 
 Het weer is relevant om te weten als je aankomt bij de uiteindelijke bestemming zodat men ervoor kan voorbereiden.
 
